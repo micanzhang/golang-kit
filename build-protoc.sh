@@ -10,7 +10,6 @@ cd ./protobuf-3.13.0
 ./autogen.sh
 ./configure
 make
-make check
 make install
 ldconfig
 protoc --version
