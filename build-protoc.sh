@@ -5,7 +5,7 @@ set -e
 # https://github.com/protocolbuffers/protobuf/blob/master/src/README.md
 apt-get update
 apt-get install -y autoconf automake libtool curl make g++ unzip
-git clone https://github.com/google/protobuf -b 3.6.x --depth 1
+git clone https://github.com/google/protobuf &&  git checkout tags/v3.13.0
 cd ./protobuf
 git submodule update --init --recursive
 ./autogen.sh
